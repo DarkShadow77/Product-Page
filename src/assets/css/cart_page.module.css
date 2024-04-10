@@ -1,0 +1,74 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+#wrapper #label {
+    color: #BCBCBC;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#wrapper #subLabel {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+#wrapper #subLabel span {
+    font-weight: 400;
+}
+
+#wrapper #cartCont {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#wrapper #totalCont{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#wrapper #totalCont #sub{
+    margin: 0;
+    font-size: 15px;
+}
+
+#wrapper #totalCont #total{
+    width: 300px;
+    margin: 0;
+    font-size: 20px;
+    color: black;
+    text-align: end;
+    text-transform: capitalize;
+    font-weight: bold;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-inline-box;
+}
+
+#wrapper #totalCont #total #currency {
+    font-size: 15px;
+}

@@ -1,0 +1,80 @@
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+#wrapper #topContent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#wrapper #topContent #label{
+    color: #BCBCBC;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 20px;
+}
+
+#wrapper #bottomContent{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+
+#wrapper #bottomContent #search{
+    margin: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+#wrapper #bottomContent #search span{
+    color: #BCBCBC;
+    text-transform: capitalize;
+}
+
+#wrapper #bottomContent #card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 1;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: start;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+#wrapper #bottomContent .shimmer {
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #eee 40%, #fafafa 50%, #eee 60%);
+    background-size: 300%;
+    background-position-x: 100%;
+    animation: shimmer 1s infinite linear;
+}
+
+@keyframes shimmer {
+    to {
+        background-position-x: 0%
+    }
+}
+
+#wrapper #bottomContent #card_wrapper a{
+    text-decoration: none;
+}
